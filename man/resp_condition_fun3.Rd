@@ -4,15 +4,16 @@
 \alias{resp_condition_fun3}
 \title{resp_condition_fun3}
 \usage{
-resp_condition_fun3(DHHGAGE_cont, CCC_091, CCC_91A)
+resp_condition_fun3(DHHGAGE_cont, CCC_091, CCC_91A, CCC_031)
 }
 \arguments{
 \item{DHHGAGE_cont}{continuous age variable.}
 
 \item{CCC_091}{variable indicating if respondent has either COPD or Emphysema}
 
-\item{CCC_91A}{variable indicating if respondent has chronic bronchitis
-cchsflow variable name: CCC_91A}
+\item{CCC_91A}{variable indicating if respondent has chronic bronchitis}
+
+\item{CCC_031}{variable indicating if respondent has asthma}
 }
 \value{
 a categorical variable (resp_condition_der) with 3 levels:
@@ -27,7 +28,8 @@ a categorical variable (resp_condition_der) with 3 levels:
 This is one of 3 functions used to create a derived variable
  (resp_condition_der) that determines if a respondents has a respiratory
  condition. This function for CCHS cycles (2001-2003) that use COPD and
- Emphysema as a combined variable, as well as Bronchitis
+ Emphysema as a combined variable, as well as Bronchitis. Asthma is used
+ across CCHS cycles as a separate variable.
 }
 \examples{
 # Using resp_condition_fun3() to create values across CCHS cycles
@@ -41,25 +43,25 @@ This is one of 3 functions used to create a derived variable
 
 library(cchsflow)
 
-resp2001 <- rec_with_table(
-  cchs2001, c(
-    "DHHGAGE_cont", "CCC_091", "CCC_91A",
+resp2001 <- suppressWarnings(rec_with_table(
+  cchs2001_p, c(
+    "DHHGAGE_cont", "CCC_091", "CCC_91A", "CCC_031",
     "resp_condition_der"
   )
-)
+))
 
 head(resp2001)
 
-resp2003 <- rec_with_table(
-  cchs2003,c(
-    "DHHGAGE_cont", "CCC_091", "CCC_91A",
+resp2003 <- suppressWarnings(rec_with_table(
+  cchs2003_p,c(
+    "DHHGAGE_cont", "CCC_091", "CCC_91A", "CCC_031",
     "resp_condition_der"
   )
-)
+))
 
 tail(resp2003)
 
-combined_resp <- bind_rows(resp2001, resp2003)
+combined_resp <- suppressWarnings(bind_rows(resp2001, resp2003))
 
 head(combined_resp)
 tail(combined_resp)

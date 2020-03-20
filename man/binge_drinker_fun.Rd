@@ -64,7 +64,7 @@ In health research, binge drinking is defined as having an excess
 
 library(cchsflow)
 binge2001 <- rec_with_table(
-  cchs2001, c(
+  cchs2001_p, c(
     "DHH_SEX", "ALW_2A1", "ALW_2A2", "ALW_2A3", "ALW_2A4", "ALW_2A5",
     "ALW_2A6", "ALW_2A7", "binge_drinker"
   )
@@ -72,16 +72,16 @@ binge2001 <- rec_with_table(
 
 head(binge2001)
 
-binge2010 <- rec_with_table(
-  cchs2010, c(
+binge2009_2010 <- rec_with_table(
+  cchs2009_2010_p, c(
     "DHH_SEX", "ALW_2A1", "ALW_2A2", "ALW_2A3", "ALW_2A4", "ALW_2A5",
     "ALW_2A6", "ALW_2A7", "binge_drinker"
   )
 )
 
-tail(binge2010)
+tail(binge2009_2010)
 
-combined_binge <- bind_rows(binge2001, binge2010)
+combined_binge <- bind_rows(binge2001, binge2009_2010)
 
 head(combined_binge)
 
