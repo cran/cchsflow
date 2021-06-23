@@ -1,8 +1,8 @@
 Package: cchsflow
 Type: Package
 Title: Transforming and Harmonizing CCHS Variables
-Version: 1.8.0
-Date: 2021-01-22
+Version: 1.8.2
+Date: 2021-06-23
 Authors@R: c(
     person(given = "Doug",
            family = "Manuel",
@@ -47,7 +47,7 @@ BugReports: https://github.com/Big-Life-Lab/cchsflow/issues
 RoxygenNote: 7.1.1
 Suggests: testthat (>= 2.1.0)
 NeedsCompilation: no
-Packaged: 2021-01-24 17:49:17 UTC; warsameyusuf
+Packaged: 2021-06-23 18:13:57 UTC; warsameyusuf
 Author: Doug Manuel [aut, cph] (<https://orcid.org/0000-0003-0912-0845>),
   Warsame Yusuf [aut, cre],
   Rostyslav Vyuha [aut],
@@ -56,4 +56,4 @@ Author: Doug Manuel [aut, cph] (<https://orcid.org/0000-0003-0912-0845>),
   The Ottawa Hospital [cph]
 Maintainer: Warsame Yusuf <waryusuf@ohri.ca>
 Repository: CRAN
-Date/Publication: 2021-01-24 18:10:05 UTC
+Date/Publication: 2021-06-23 18:30:02 UTC
