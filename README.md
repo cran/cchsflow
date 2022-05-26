@@ -7,6 +7,7 @@ development](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://l
 ![](https://img.shields.io/github/v/release/big-life-lab/cchsflow?color=green&label=GitHub)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![](https://img.shields.io/badge/doi-10.17605/OSF.IO/HKUY3-yellowgreen.svg)](https://OSF.IO/HKUY3)
+[![](https://cranlogs.r-pkg.org/badges/cchsflow)](https://cran.r-project.org/package=cchsflow)
 <!-- badges: end -->
 
 *cchsflow* supports the use of the Canadian Community Health Survey (CCHS) by 
@@ -162,10 +163,10 @@ feel free to contribute to `cchsflow` by making a PR that creates versions of
 CCHS data used in this library is accessed and adapted in accordance to the 
 Statistics Canada Open Licence Agreement.
 
-Source from Statistics Canada, Canadian Community Health Survey 2001 to 2013 
-PUMF, accessed Jan 2020. Reproduced and distributed on an "as is" basis with the 
+Source from Statistics Canada, Canadian Community Health Survey 2001 to 2018 
+PUMF, accessed March 2022. Reproduced and distributed on an "as is" basis with the 
 permission of Statistics Canada.
 
-Adapted from Statistics Canada, Canadian Community Health Surveys 2013 to 2013 
-PUMF, accessed Jan 2020. This does not constitute an endorsement by Statistics 
+Adapted from Statistics Canada, Canadian Community Health Surveys 2001 to 2018 
+PUMF, accessed March 2022. This does not constitute an endorsement by Statistics 
 Canada of this product.
